@@ -2,7 +2,10 @@ name: Hello Node CI
 
 on:
     push:
-        #path: ""
+        branches:
+            -  main
+        paths:
+            -  "docker/node"
     workflow_dispatch:
 
 jobs:
